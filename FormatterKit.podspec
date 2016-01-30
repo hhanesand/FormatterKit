@@ -50,7 +50,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'TimeIntervalFormatter' do |ss|
     ss.source_files = 'FormatterKit/TTTTimeIntervalFormatter.{h,m}'
-    ss.resources = 'Localizations/**'
+    ss.resource_bundles = {'FormatterKit' => ['Localizations/**']}
   end
 
   s.subspec 'UnitOfInformationFormatter' do |ss|
